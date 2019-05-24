@@ -37,26 +37,6 @@ After every execution a folder named with timestamp is created where you can fin
 
 ### Test Description
 
-###### registerTest
-
-This test opens Registration page, execute simple validation of text boxes, then fill them by valid data and register a new user. 
-
-Checkings:
-* Red border of text boxes and error messages next to them when email is invalid, password is short, repeated password does not match entered.
-* Account page opens after successful registration.
-* Message about successful registration is displayed.
-
-###### loginSuccessDeleteAccountTest
-runs only after successful finish of registerTest.
-
-This test opens Login page, logs in as the user created during previous test, opens Personal Data page and deletes this account. 
-
-Checkings:
-* Account page opens after successful logging in.
-* Message about successful logging in is displayed.
-* Message about successful removing account is displayed.
-
-
 ###### addNewPatientTest
 
 This test opens Login page, fills username and password fields by values provided, clicks 'LOGIN' button, clicks 'Add Patient' button, fills all required fields by test values, clicks 'SAVE' button, gets new user name and password, logs in as the user added, and checks 'terms of use' and 'release of medical information' links are displayed.  
